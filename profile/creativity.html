@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>Creative Writing Portfolio</title>
+
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    background:#f8f5f0;
+    color:#333;
+}
+
+
+/* HEADER */
+header{
+    background:#5a1f1f; /* Maroon */
+    color:#d4af37; /* Gold */
+    text-align:center;
+    padding:40px;
+}
+header h1{
+    margin:0;
+    font-size:50px;
+}
+header p{
+    margin-top:10px;
+    font-size:18px;
+}
+
+
+/* MAIN */
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding:40px 20px;
+}
+h2{
+    text-align:center;
+    margin-bottom:30px;
+    color:#5a1f1f;
+}
+
+
+/* PROFILE GRID */
+.profile-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+
+/* CARDS */
+.card{
+    background:white;
+    border-radius:10px;
+    padding:20px;
+    text-align:center;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+    cursor:pointer;
+    transition:0.3s;
+    border-top:5px solid #d4af37;
+}
+.card:hover{
+    transform:translateY(-5px);
+}
+.card img{
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    margin-bottom:15px;
+    border:3px solid #5a1f1f;
+}
+.card h3{
+    margin:10px 0;
+    color:#5a1f1f;
+}
+
+
+/* PROFILE PAGE */
+.profile-page{
+    display:none;
+    text-align:center;
+    padding:50px 20px;
+}
+.profile-page img{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    margin-bottom:20px;
+    border:4px solid #d4af37;
+}
+.profile-page h2{
+    color:#5a1f1f;
+}
+.profile-page p{
+    max-width:600px;
+    margin:auto;
+    line-height:1.7;
+}
+
+
+/* WORK BOX */
+.work-box{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    margin:20px auto;
+    max-width:700px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+
+/* DROPDOWN MENU */
+.student-menu{
+    margin:10px auto 30px;
+}
+.student-menu select{
+    padding:8px 12px;
+    border-radius:5px;
+    border:1px solid #5a1f1f;
+    font-size:14px;
+}
+
+
+/* BUTTON */
+button{
+    margin-top:30px;
+    padding:12px 20px;
+    border:none;
+    background:#5a1f1f;
+    color:#d4af37;
+    border-radius:5px;
+    cursor:pointer;
+    font-weight:bold;
+}
+button:hover{
+    background:#3d1515;
+}
+
+
+/* FOOTER */
+footer{
+    background:#5a1f1f;
+    color:#d4af37;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+.hawk{
+    font-size:22px;
+}
+</style>
+</head>
+
+
+<body>
+
+
+<!-- HOME PAGE -->
+<div id="homePage">
+
+
+<header>
+    <h1> Creative Writing Portfolio </h1>
+    <p>Tierney | Spring 2026 | Final Project</p>
+    <p class="hawk">Home of the Hawks</p>
+</header>
+
+
+<div class="container">
+    <h2>Class Portfolios</h2>
+
+
+    <div class="profile-grid">
+
+
+        <div class="card" onclick="openProfile('john')">
+            <img src="https://via.placeholder.com/90">
+            <h3>John Tierney</h3>
+            <p>Creative Writing Student</p>
+        </div>
+
+
+        <div class="card" onclick="openProfile('priya')">
+            <img src="Priya.png">
+            <h3>Priya Adams</h3>
+            <p>Creative Writing Student</p>
+        </div>
+
+
+        <div class="card" onclick="openProfile('sabrin')">
+            <img src="Sabrin.png">
+            <h3>Sabrin Ahmed</h3>
+            <p>Creative Writing Student</p>
+        </div>
+
+
+        <div class="card" onclick="openProfile('fatima')">
+            <img src="Fatima.png">
+            <h3>Fatima Ali</h3>
+            <p>Creative Writing Student</p>
+        </div>
+
+
+        <div class="card" onclick="openProfile('mohammed')">
+            <img src="Mohammed.png">
+            <h3>Mohammed Ali</h3>
+            <p>Creative Writing Student</p>
+        </div>
+
+
+        <div class="card" onclick="openProfile('amelia')">
+            <img src="Amelia.png">
+            <h3>Amelia Allison</h3>
+            <p>Creative Writing Student</p>
+        </div>
+
+
+        <div class="card" onclick="openProfile('abdurahman')">
+            <img src="Abdruhman.png">
+            <h3>Abdurahman Barre</h3>
+            <p>Creative Writing Student</p>
+        </div>
+
+
+        <div class="card" onclick="openProfile('ruwayda')">
+            <img src="https://via.placeholder.com/90">
+            <h3>Ruwayda Farah</h3>
+            <p>Creative Writing Student</p>
+        </div>
+
+
+        <div class="card" onclick="openProfile('asia')">
+            <img src="Asia.png">
+            <h3>Asia Idris</h3>
+            <p>Creative Writing Student</p>
+        </div>
+
+
+        <div class="card" onclick="openProfile('hamdi')">
+            <img src="Hamdi.png">
+            <h3>Hamdi Jama</h3>
+            <p>Creative Writing Student</p>
+        </div>
+
+
+        <div class="card" onclick="openProfile('brandon')">
+            <img src="Brandon.png">
+            <h3>Brandon Jimenez-Martinez</h3>
+            <p>Creative Writing Student</p>
+        </div>
+
+
+        <div class="card" onclick="openProfile('aksa')">
+            <img src="Aksa.png">
+            <h3>Aksa Kolie</h3>
+            <p>Creative Writing Student</p>
+        </div>
+
+
+        <div class="card" onclick="openProfile('suweda')">
+            <img src="Suweda.png">
+            <h3>Suweda Mahamud</h3>
+            <p>Creative Writing Student</p>
+        </div>
+
+
+        <div class="card" onclick="openProfile('salmaan')">
+            <img src="Salmaan.png">
+            <h3>Salmaan Mosa</h3>
+            <p>Creative Writing Student</p>
+        </div>
+
+
+        <div class="card" onclick="openProfile('karol')">
+            <img src="karol.png">
+            <h3>Karol Oext</h3>
+            <p>Creative Writing Student</p>
+        </div>
+
+
+        <div class="card" onclick="openProfile('precious')">
+            <img src="Precious.png">
+            <h3>Precious Payne</h3>
+            <p>Creative Writing Student</p>
+        </div>
+
+
+    </div>
+
+
+</div>
+
+
+<footer>
+    <p> Hawks Creative Writing Portfolio © 2026 </p>
+</footer>
+
+
+</div>
+
+
+<!-- STUDENT PAGES -->
+
+
+<!-- helper dropdown (same options everywhere) -->
+<!-- we’ll reuse this HTML inside each student page -->
+<!-- JOHN -->
+<div id="john" class="profile-page">
+    <img src="https://via.placeholder.com/150">
+    <h2>John Tierney</h2>
+
+
+    <div class="student-menu">
+        <select onchange="if(this.value) openProfile(this.value)">
+            <option value="">Select a student</option>
+            <option value="john">John Tierney</option>
+            <option value="priya">Priya Adams</option>
+            <option value="sabrin">Sabrin Ahmed</option>
+            <option value="fatima">Fatima Ali</option>
+            <option value="mohammed">Mohammed Ali</option>
+            <option value="amelia">Amelia Allison</option>
+            <option value="abdurahman">Abdurahman Barre</option>
+            <option value="ruwayda">Ruwayda Farah</option>
+            <option value="asia">Asia Idris</option>
+            <option value="hamdi">Hamdi Jama</option>
+            <option value="brandon">Brandon Jimenez-Martinez</option>
+            <option value="aksa">Aksa Kolie</option>
+            <option value="suweda">Suweda Mahamud</option>
+            <option value="salmaan">Salmaan Mosa</option>
+            <option value="karol">Karol Oext</option>
+            <option value="precious">Precious Payne</option>
+        </select>
+    </div>
+
+
+    <div class="work-box">
+        <h3>Poem</h3>
+        <p>Student poem goes here...</p>
+    </div>
+    <div class="work-box">
+        <h3>Short Story</h3>
+        <p>Student story goes here...</p>
+    </div>
+
+
+    <button onclick="goHome()">Back Home</button>
+</div>
+
+
+<!-- PRIYA -->
+<div id="priya" class="profile-page">
+    <img src="Priya.png">
+    <h2>Priya Adams</h2>
+
+
+    <div class="student-menu">
+        <select onchange="if(this.value) openProfile(this.value)">
+            <option value="">Select a student</option>
+            <option value="john">John Tierney</option>
+            <option value="priya">Priya Adams</option>
+            <option value="sabrin">Sabrin Ahmed</option>
+            <option value="fatima">Fatima Ali</option>
+            <option value="mohammed">Mohammed Ali</option>
+            <option value="amelia">Amelia Allison</option>
+            <option value="abdurahman">Abdurahman Barre</option>
+            <option value="ruwayda">Ruwayda Farah</option>
+            <option value="asia">Asia Idris</option>
+            <option value="hamdi">Hamdi Jama</option>
+            <option value="brandon">Brandon Jimenez-Martinez</option>
+            <option value="aksa">Aksa Kolie</option>
+            <option value="suweda">Suweda Mahamud</option>
+            <option value="salmaan">Salmaan Mosa</option>
+            <option value="karol">Karol Oext</option>
+            <option value="precious">Precious Payne</option>
+        </select>
+    </div>
+
+
+    <div class="work-box">
+        <h3>Poem</h3>
+        <p>Student poem goes here...</p>
+    </div>
+    <div class="work-box">
+        <h3>Short Story</h3>
+        <p>Student story goes here...</p>
+    </div>
+
+
+    <button onclick="goHome()">Back Home</button>
+</div>
+
+
+<!-- SABRIN -->
+<div id="sabrin" class="profile-page">
+    <img src="Sabrin.png">
+    <h2>Sabrin Ahmed</h2>
+
+
+    <div class="student-menu">
+        <select onchange="if(this.value) openProfile(this.value)">
+            <option value="">Select a student</option>
+            <option value="john">John Tierney</option>
+            <option value="priya">Priya Adams</option>
+            <option value="sabrin">Sabrin Ahmed</option>
+            <option value="fatima">Fatima Ali</option>
+            <option value="mohammed">Mohammed Ali</option>
+            <option value="amelia">Amelia Allison</option>
+            <option value="abdurahman">Abdurahman Barre</option>
+            <option value="ruwayda">Ruwayda Farah</option>
+            <option value="asia">Asia Idris</option>
+            <option value="hamdi">Hamdi Jama</option>
+            <option value="brandon">Brandon Jimenez-Martinez</option>
+            <option value="aksa">Aksa Kolie</option>
+            <option value="suweda">Suweda Mahamud</option>
+            <option value="salmaan">Salmaan Mosa</option>
+            <option value="karol">Karol Oext</option>
+            <option value="precious">Precious Payne</option>
+        </select>
+    </div>
+
+
+    <div class="work-box">
+        <h3>Poem</h3>
+        <p>Student poem goes here...</p>
+    </div>
+    <div class="work-box">
+        <h3>Short Story</h3>
+        <p>Student story goes here...</p>
+    </div>
+
+
+    <button onclick="goHome()">Back Home</button>
+</div>
+
+
+<!-- FATIMA -->
+<div id="fatima" class="profile-page">
+    <img src="Fatima.png">
+    <h2>Fatima Ali</h2>
+
+
+    <div class="student-menu">
+        <select onchange="if(this.value) openProfile(this.value)">
+            <option value="">Select a student</option>
+            <option value="john">John Tierney</option>
+            <option value="priya">Priya Adams</option>
+            <option value="sabrin">Sabrin Ahmed</option>
+            <option value="fatima">Fatima Ali</option>
+            <option value="mohammed">Mohammed Ali</option>
+            <option value="amelia">Amelia Allison</option>
+            <option value="abdurahman">Abdurahman Barre</option>
+            <option value="ruwayda">Ruwayda Farah</option>
+            <option value="asia">Asia Idris</option>
+            <option value="hamdi">Hamdi Jama</option>
+            <option value="brandon">Brandon Jimenez-Martinez</option>
+            <option value="aksa">Aksa Kolie</option>
+            <option value="suweda">Suweda Mahamud</option>
+            <option value="salmaan">Salmaan Mosa</option>
+            <option value="karol">Karol Oext</option>
+            <option value="precious">Precious Payne</option>
+        </select>
+    </div>
+
+
+    <div class="work-box">
+        <h3>Poem</h3>
+        <p>Student poem goes here...</p>
+    </div>
+    <div class="work-box">
+        <h3>Short Story</h3>
+        <p>Student story goes here...</p>
+    </div>
+
+
+    <button onclick="goHome()">Back Home</button>
+</div>
+
+
+<!-- MOHAMMED -->
+<div id="mohammed" class="profile-page">
+    <img src="Mohammed.png">
+    <h2>Mohammed Ali</h2>
+
+
+    <div class="student-menu">
+        <select onchange="if(this.value) openProfile(this.value)">
+            <option value="">Select a student</option>
+            <option value="john">John Tierney</option>
+            <option value="priya">Priya Adams</option>
+            <option value="sabrin">Sabrin Ahmed</option>
+            <option value="fatima">Fatima Ali</option>
+            <option value="mohammed">Mohammed Ali</option>
+            <option value="amelia">Amelia Allison</option>
+            <option value="abdurahman">Abdurahman Barre</option>
+            <option value="ruwayda">Ruwayda Farah</option>
+            <option value="asia">Asia Idris</option>
+            <option value="hamdi">Hamdi Jama</option>
+            <option value="brandon">Brandon Jimenez-Martinez</option>
+            <option value="aksa">Aksa Kolie</option>
+            <option value="suweda">Suweda Mahamud</option>
+            <option value="salmaan">Salmaan Mosa</option>
+            <option value="karol">Karol Oext</option>
+            <option value="precious">Precious Payne</option>
+        </select>
+    </div>
+
+
+    <div class="work-box">
+        <h3>Poem</h3>
+        <p>Student poem goes here...</p>
+    </div>
+    <div class="work-box">
+        <h3>Short Story</h3>
+        <p>Student story goes here...</p>
+    </div>
+
+
+    <button onclick="goHome()">Back Home</button>
+</div>
+
+
+<!-- AMELIA -->
+<div id="amelia" class="profile-page">
+    <img src="Amelia.png">
+    <h2>Amelia Allison</h2>
+
+
+    <div class="student-menu">
+        <select onchange="if(this.value) openProfile(this.value)">
+            <option value="">Select a student</option>
+            <option value="john">John Tierney</option>
+            <option value="priya">Priya Adams</option>
+            <option value="sabrin">Sabrin Ahmed</option>
+            <option value="fatima">Fatima Ali</option>
+            <option value="mohammed">Mohammed Ali</option>
+            <option value="amelia">Amelia Allison</option>
+            <option value="abdurahman">Abdurahman Barre</option>
+            <option value="ruwayda">Ruwayda Farah</option>
+            <option value="asia">Asia Idris</option>
+            <option value="hamdi">Hamdi Jama</option>
+            <option value="brandon">Brandon Jimenez-Martinez</option>
+            <option value="aksa">Aksa Kolie</option>
+            <option value="suweda">Suweda Mahamud</option>
+            <option value="salmaan">Salmaan Mosa</option>
+            <option value="karol">Karol Oext</option>
+            <option value="precious">Precious Payne</option>
+        </select>
+    </div>
+
+
+    <div class="work-box">
+        <h3>Poem</h3>
+        <p>Student poem goes here...</p>
+    </div>
+    <div class="work-box">
+        <h3>Short Story</h3>
+        <p>Student story goes here...</p>
+    </div>
+
+
+    <button onclick="goHome()">Back Home</button>
+</div>
+
+
+<!-- ABDURAHMAN -->
+<div id="abdurahman" class="profile-page">
+    <img src="Abdruhman.png">
+    <h2>Abdurahman Barre</h2>
+
+
+    <div class="student-menu">
+        <select onchange="if(this.value) openProfile(this.value)">
+            <option value="">Select a student</option>
+            <option value="john">John Tierney</option>
+            <option value="priya">Priya Adams</option>
+            <option value="sabrin">Sabrin Ahmed</option>
+            <option value="fatima">Fatima Ali</option>
+            <option value="mohammed">Mohammed Ali</option>
+            <option value="amelia">Amelia Allison</option>
+            <option value="abdurahman">Abdurahman Barre</option>
+            <option value="ruwayda">Ruwayda Farah</option>
+            <option value="asia">Asia Idris</option>
+            <option value="hamdi">Hamdi Jama</option>
+            <option value="brandon">Brandon Jimenez-Martinez</option>
+            <option value="aksa">Aksa Kolie</option>
+            <option value="suweda">Suweda Mahamud</option>
+            <option value="salmaan">Salmaan Mosa</option>
+            <option value="karol">Karol Oext</option>
+            <option value="precious">Precious Payne</option>
+        </select>
+    </div>
+
+
+    <div class="work-box">
+        <h3>Poem</h3>
+        <p>Student poem goes here...</p>
+    </div>
+    <div class="work-box">
+        <h3>Short Story</h3>
+        <p>Student story goes here...</p>
+    </div>
+
+
+    <button onclick="goHome()">Back Home</button>
+</div>
+
+
+<!-- RUWAYDA -->
+<div id="ruwayda" class="profile-page">
+    <img src="r">
+    <h2>Ruwayda Farah</h2>
+
+
+    <div class="student-menu">
+        <select onchange="if(this.value) openProfile(this.value)">
+            <option value="">Select a student</option>
+            <option value="john">John Tierney</option>
+            <option value="priya">Priya Adams</option>
+            <option value="sabrin">Sabrin Ahmed</option>
+            <option value="fatima">Fatima Ali</option>
+            <option value="mohammed">Mohammed Ali</option>
+            <option value="amelia">Amelia Allison</option>
+            <option value="abdurahman">Abdurahman Barre</option>
+            <option value="ruwayda">Ruwayda Farah</option>
+            <option value="asia">Asia Idris</option>
+            <option value="hamdi">Hamdi Jama</option>
+            <option value="brandon">Brandon Jimenez-Martinez</option>
+            <option value="aksa">Aksa Kolie</option>
+            <option value="suweda">Suweda Mahamud</option>
+            <option value="salmaan">Salmaan Mosa</option>
+            <option value="karol">Karol Oext</option>
+            <option value="precious">Precious Payne</option>
+        </select>
+    </div>
+
+
+    <div class="work-box">
+        <h3>Poem</h3>
+        <p>Student poem goes here...</p>
+    </div>
+    <div class="work-box">
+        <h3>Short Story</h3>
+        <p>Student story goes here...</p>
+    </div>
+
+
+    <button onclick="goHome()">Back Home</button>
+</div>
+
+
+<!-- ASIA -->
+<div id="asia" class="profile-page">
+    <img src="Asia.png">
+    <h2>Asia Idris</h2>
+
+
+    <div class="student-menu">
+        <select onchange="if(this.value) openProfile(this.value)">
+            <option value="">Select a student</option>
+            <option value="john">John Tierney</option>
+            <option value="priya">Priya Adams</option>
+            <option value="sabrin">Sabrin Ahmed</option>
+            <option value="fatima">Fatima Ali</option>
+            <option value="mohammed">Mohammed Ali</option>
+            <option value="amelia">Amelia Allison</option>
+            <option value="abdurahman">Abdurahman Barre</option>
+            <option value="ruwayda">Ruwayda Farah</option>
+            <option value="asia">Asia Idris</option>
+            <option value="hamdi">Hamdi Jama</option>
+            <option value="brandon">Brandon Jimenez-Martinez</option>
+            <option value="aksa">Aksa Kolie</option>
+            <option value="suweda">Suweda Mahamud</option>
+            <option value="salmaan">Salmaan Mosa</option>
+            <option value="karol">Karol Oext</option>
+            <option value="precious">Precious Payne</option>
+        </select>
+    </div>
+
+
+    <div class="work-box">
+        <h3>Poem</h3>
+        <p>Student poem goes here...</p>
+    </div>
+    <div class="work-box">
+        <h3>Short Story</h3>
+        <p>Student story goes here...</p>
+    </div>
+
+
+    <button onclick="goHome()">Back Home</button>
+</div>
+
+
+<!-- HAMDI -->
+<div id="hamdi" class="profile-page">
+    <img src="Hamdi.png">
+    <h2>Hamdi Jama</h2>
+
+
+    <div class="student-menu">
+        <select onchange="if(this.value) openProfile(this.value)">
+            <option value="">Select a student</option>
+            <option value="john">John Tierney</option>
+            <option value="priya">Priya Adams</option>
+            <option value="sabrin">Sabrin Ahmed</option>
+            <option value="fatima">Fatima Ali</option>
+            <option value="mohammed">Mohammed Ali</option>
+            <option value="amelia">Amelia Allison</option>
+            <option value="abdurahman">Abdurahman Barre</option>
+            <option value="ruwayda">Ruwayda Farah</option>
+            <option value="asia">Asia Idris</option>
+            <option value="hamdi">Hamdi Jama</option>
+            <option value="brandon">Brandon Jimenez-Martinez</option>
+            <option value="aksa">Aksa Kolie</option>
+            <option value="suweda">Suweda Mahamud</option>
+            <option value="salmaan">Salmaan Mosa</option>
+            <option value="karol">Karol Oext</option>
+            <option value="precious">Precious Payne</option>
+        </select>
+    </div>
+
+
+    <div class="work-box">
+        <h3>Poem</h3>
+        <p>Student poem goes here...</p>
+    </div>
+    <div class="work-box">
+        <h3>Short Story</h3>
+        <p>Student story goes here...</p>
+    </div>
+
+
+    <button onclick="goHome()">Back Home</button>
+</div>
+
+
+<!-- BRANDON -->
+<div id="brandon" class="profile-page">
+    <img src="Brandon.png">
+    <h2>Brandon Jimenez-Martinez</h2>
+
+
+    <div class="student-menu">
+        <select onchange="if(this.value) openProfile(this.value)">
+            <option value="">Select a student</option>
+            <option value="john">John Tierney</option>
+            <option value="priya">Priya Adams</option>
+            <option value="sabrin">Sabrin Ahmed</option>
+            <option value="fatima">Fatima Ali</option>
+            <option value="mohammed">Mohammed Ali</option>
+            <option value="amelia">Amelia Allison</option>
+            <option value="abdurahman">Abdurahman Barre</option>
+            <option value="ruwayda">Ruwayda Farah</option>
+            <option value="asia">Asia Idris</option>
+            <option value="hamdi">Hamdi Jama</option>
+            <option value="brandon">Brandon Jimenez-Martinez</option>
+            <option value="aksa">Aksa Kolie</option>
+            <option value="suweda">Suweda Mahamud</option>
+            <option value="salmaan">Salmaan Mosa</option>
+            <option value="karol">Karol Oext</option>
+            <option value="precious">Precious Payne</option>
+        </select>
+    </div>
+
+
+    <div class="work-box">
+        <h3>Poem</h3>
+        <p>Student poem goes here...</p>
+    </div>
+    <div class="work-box">
+        <h3>Short Story</h3>
+        <p>Student story goes here...</p>
+    </div>
+
+
+    <button onclick="goHome()">Back Home</button>
+</div>
+
+
+<!-- AKSA -->
+<div id="aksa" class="profile-page">
+    <img src="Aksa.png">
+    <h2>Aksa Kolie</h2>
+
+
+    <div class="student-menu">
+        <select onchange="if(this.value) openProfile(this.value)">
+            <option value="">Select a student</option>
+            <option value="john">John Tierney</option>
+            <option value="priya">Priya Adams</option>
+            <option value="sabrin">Sabrin Ahmed</option>
+            <option value="fatima">Fatima Ali</option>
+            <option value="mohammed">Mohammed Ali</option>
+            <option value="amelia">Amelia Allison</option>
+            <option value="abdurahman">Abdurahman Barre</option>
+            <option value="ruwayda">Ruwayda Farah</option>
+            <option value="asia">Asia Idris</option>
+            <option value="hamdi">Hamdi Jama</option>
+            <option value="brandon">Brandon Jimenez-Martinez</option>
+            <option value="aksa">Aksa Kolie</option>
+            <option value="suweda">Suweda Mahamud</option>
+            <option value="salmaan">Salmaan Mosa</option>
+            <option value="karol">Karol Oext</option>
+            <option value="precious">Precious Payne</option>
+        </select>
+    </div>
+
+
+    <div class="work-box">
+        <h3>Poem</h3>
+        <p>Student poem goes here...</p>
+    </div>
+    <div class="work-box">
+        <h3>Short Story</h3>
+        <p>Student story goes here...</p>
+    </div>
+
+
+    <button onclick="goHome()">Back Home</button>
+</div>
+
+
+<!-- SUWEDA -->
+<div id="suweda" class="profile-page">
+    <img src="Suweda.png">
+    <h2>Suweda Mahamud</h2>
+
+
+    <div class="student-menu">
+        <select onchange="if(this.value) openProfile(this.value)">
+            <option value="">Select a student</option>
+            <option value="john">John Tierney</option>
+            <option value="priya">Priya Adams</option>
+            <option value="sabrin">Sabrin Ahmed</option>
+            <option value="fatima">Fatima Ali</option>
+            <option value="mohammed">Mohammed Ali</option>
+            <option value="amelia">Amelia Allison</option>
+            <option value="abdurahman">Abdurahman Barre</option>
+            <option value="ruwayda">Ruwayda Farah</option>
+            <option value="asia">Asia Idris</option>
+            <option value="hamdi">Hamdi Jama</option>
+            <option value="brandon">Brandon Jimenez-Martinez</option>
+            <option value="aksa">Aksa Kolie</option>
+            <option value="suweda">Suweda Mahamud</option>
+            <option value="salmaan">Salmaan Mosa</option>
+            <option value="karol">Karol Oext</option>
+            <option value="precious">Precious Payne</option>
+        </select>
+    </div>
+
+
+    <div class="work-box">
+        <h3>Poem</h3>
+        <p>Student poem goes here...</p>
+    </div>
+    <div class="work-box">
+        <h3>Short Story</h3>
+        <p>Student story goes here...</p>
+    </div>
+
+
+    <button onclick="goHome()">Back Home</button>
+</div>
+
+
+<!-- SALMAAN -->
+<div id="salmaan" class="profile-page">
+    <img src="Salmaan.png">
+    <h2>Salmaan Mosa</h2>
+
+
+    <div class="student-menu">
+        <select onchange="if(this.value) openProfile(this.value)">
+            <option value="">Select a student</option>
+            <option value="john">John Tierney</option>
+            <option value="priya">Priya Adams</option>
+            <option value="sabrin">Sabrin Ahmed</option>
+            <option value="fatima">Fatima Ali</option>
+            <option value="mohammed">Mohammed Ali</option>
+            <option value="amelia">Amelia Allison</option>
+            <option value="abdurahman">Abdurahman Barre</option>
+            <option value="ruwayda">Ruwayda Farah</option>
+            <option value="asia">Asia Idris</option>
+            <option value="hamdi">Hamdi Jama</option>
+            <option value="brandon">Brandon Jimenez-Martinez</option>
+            <option value="aksa">Aksa Kolie</option>
+            <option value="suweda">Suweda Mahamud</option>
+            <option value="salmaan">Salmaan Mosa</option>
+            <option value="karol">Karol Oext</option>
+            <option value="precious">Precious Payne</option>
+        </select>
+    </div>
+
+
+    <div class="work-box">
+        <h3>Poem</h3>
+        <p>Student poem goes here...</p>
+    </div>
+    <div class="work-box">
+        <h3>Short Story</h3>
+        <p>Student story goes here...</p>
+    </div>
+
+
+    <button onclick="goHome()">Back Home</button>
+</div>
+
+
+<!-- KAROL -->
+<div id="karol" class="profile-page">
+    <img src="karol.png">
+    <h2>Karol Oext</h2>
+
+
+    <div class="student-menu">
+        <select onchange="if(this.value) openProfile(this.value)">
+            <option value="">Select a student</option>
+            <option value="john">John Tierney</option>
+            <option value="priya">Priya Adams</option>
+            <option value="sabrin">Sabrin Ahmed</option>
+            <option value="fatima">Fatima Ali</option>
+            <option value="mohammed">Mohammed Ali</option>
+            <option value="amelia">Amelia Allison</option>
+            <option value="abdurahman">Abdurahman Barre</option>
+            <option value="ruwayda">Ruwayda Farah</option>
+            <option value="asia">Asia Idris</option>
+            <option value="hamdi">Hamdi Jama</option>
+            <option value="brandon">Brandon Jimenez-Martinez</option>
+            <option value="aksa">Aksa Kolie</option>
+            <option value="suweda">Suweda Mahamud</option>
+            <option value="salmaan">Salmaan Mosa</option>
+            <option value="karol">Karol Oext</option>
+            <option value="precious">Precious Payne</option>
+        </select>
+    </div>
+
+
+    <div class="work-box">
+        <h3>Poem</h3>
+        <p>Student poem goes here...</p>
+    </div>
+    <div class="work-box">
+        <h3>Short Story</h3>
+        <p>Student story goes here...</p>
+    </div>
+
+
+    <button onclick="goHome()">Back Home</button>
+</div>
+
+
+<!-- PRECIOUS -->
+<div id="precious" class="profile-page">
+    <img src="Precious.png">
+    <h2>Precious Payne</h2>
+
+
+    <div class="student-menu">
+        <select onchange="if(this.value) openProfile(this.value)">
+            <option value="">Select a student</option>
+            <option value="john">John Tierney</option>
+            <option value="priya">Priya Adams</option>
+            <option value="sabrin">Sabrin Ahmed</option>
+            <option value="fatima">Fatima Ali</option>
+            <option value="mohammed">Mohammed Ali</option>
+            <option value="amelia">Amelia Allison</option>
+            <option value="abdurahman">Abdurahman Barre</option>
+            <option value="ruwayda">Ruwayda Farah</option>
+            <option value="asia">Asia Idris</option>
+            <option value="hamdi">Hamdi Jama</option>
+            <option value="brandon">Brandon Jimenez-Martinez</option>
+            <option value="aksa">Aksa Kolie</option>
+            <option value="suweda">Suweda Mahamud</option>
+            <option value="salmaan">Salmaan Mosa</option>
+            <option value="karol">Karol Oext</option>
+            <option value="precious">Precious Payne</option>
+        </select>
+    </div>
+
+
+    <div class="work-box">
+        <h3>Poem</h3>
+        <p>Student poem goes here...</p>
+    </div>
+    <div class="work-box">
+        <h3>Short Story</h3>
+        <p>Student story goes here...</p>
+    </div>
+
+
+    <button onclick="goHome()">Back Home</button>
+</div>
+
+
+<script>
+function openProfile(profileId){
+    document.getElementById("homePage").style.display = "none";
+    document.querySelectorAll(".profile-page").forEach(page => {
+        page.style.display = "none";
+    });
+    document.getElementById(profileId).style.display = "block";
+}
+
+
+function goHome(){
+    document.getElementById("homePage").style.display = "block";
+    document.querySelectorAll(".profile-page").forEach(page => {
+        page.style.display = "none";
+    });
+}
+</script>
+
+
+</body>
+</html>
+
+
+
+
